@@ -1,0 +1,17 @@
+.header {
+    /* fixed the header to the top border */
+    position: fixed;
+    top: 0;
+    /* hights fixed width 100% of the monitor */
+    width: 100vw;
+    height: 70px;
+    background-color: red;
+    /* rounded border on the bottom corners */
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    font-size: 25px;
+    /* declared as flexbox and formated all elements in the middle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
