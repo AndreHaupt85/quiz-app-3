@@ -1,0 +1,58 @@
+.container {
+    /* set quizcardbox zo a flexbox */
+    display: flex;
+    /* ajust all items to the center of the page */
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.quicardpage--quizcard {
+    /* set quizcard to grid */
+    display: grid;
+    /* set backdgroundcolor */
+    background-color: palegoldenrod;
+    /* set border thinkness type and color */
+    border: 5px solid orange;
+    /* for rounded corners */
+    border-radius: 50px;
+    /* for space between content and border */
+    padding: 20px;
+    /* for space between border and outer objects */
+    margin: 10px;
+    /* card setup */
+    grid-template-areas:
+    "question" "question"
+    "asnwer" "answer"
+    "answerbutton" "answerbutton"
+    "hashtag" "hashtag";
+    /* sajust inner items to the center */
+    justify-items: center;
+}
+
+.quizcard--bookmarkicon {
+    /* release the position from the rest of the objects */
+    position: relative;
+    /* cords for the new position */
+    top: -30px;
+    left: 250px;
+}
+
+.quizcard--question {
+    grid-area: question;
+}
+
+.quizcard--answer {
+    grid-area: answer;
+}
+
+.quizcard--answerbutton {
+    grid-area: answerbutton;
+    width: 15vw;
+    height: 8vh;
+    border-radius: 15px;
+}
+
+.quizcard--hashtag {
+    grid-area: hashtag;
+}
