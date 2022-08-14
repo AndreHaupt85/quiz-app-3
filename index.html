@@ -59,9 +59,9 @@
               Mit welchem Befehl deklariert man ein Objekt zu einer Flexbox?
             </p>
             <!-- add hideable Answer -->
-            <p class="quizcard--answer hidden">dislpay: flex;</p>
+            <p class="quizcard--answer hidden" data-js="quizcard--answer">dislpay: flex;</p>
             <!-- add Asnwerbutton -->
-            <button class="quizcard--answerbutton">Show Answer</button>
+            <button class="quizcard--answerbutton" data-js="quizcard--answerbutton">Show Answer</button>
             <!-- add Hashtags -->
             <ul class="quizcard--hashtag">
               <li># CSS</li>
@@ -85,13 +85,13 @@
               Welche 3 Befehle werden benötigt um ein Repository auf Git zu pushen?
             </p>
             <!-- add hideable Answer -->
-            <p class="quizcard--answer hidden">
+            <p class="quizcard--answer hidden" data-js="quizcard--answer">
                 git add .</br>
                 git commit -m "comment"</br>
                 git push
             </p>
             <!-- add Asnwerbutton -->
-            <button class="quizcard--answerbutton">Show Answer</button>
+            <button class="quizcard--answerbutton" data-js="quizcard--answerbutton">Show Answer</button>
             <!-- add Hashtags -->
             <ul class="quizcard--hashtag">
               <li># Terminal</li>
@@ -115,9 +115,9 @@
               Wie sprichst du die Klasse "article class="quizcard" im CSS an?
             </p>
             <!-- add hideable Answer -->
-            <p class="quizcard--answer hidden">.quizcard</p>
+            <p class="quizcard--answer hidden" data-js="quizcard--answer">.quizcard</p>
             <!-- add Asnwerbutton -->
-            <button class="quizcard--answerbutton">Show Answer</button>
+            <button class="quizcard--answerbutton" data-js="quizcard--answerbutton">Show Answer</button>
             <!-- add Hashtags -->
             <ul class="quizcard--hashtag">
               <li># CSS</li>
@@ -141,13 +141,13 @@
               Welche 3 Dateien sollten in jedem deiner Projekte vorhanden sein?
             </p>
             <!-- add hideable Answer -->
-            <p class="quizcard--answer hidden">
+            <p class="quizcard--answer hidden" data-js="quizcard--answer">
                 README.md</br>
                 index.html</br>
                 .gitignore
             </p>
             <!-- add Asnwerbutton -->
-            <button class="quizcard--answerbutton">Show Answer</button>
+            <button class="quizcard--answerbutton" data-js="quizcard--answerbutton">Show Answer</button>
             <!-- add Hashtags -->
             <ul class="quizcard--hashtag">
               <li># Git</li>
@@ -159,7 +159,7 @@
       </div>
       <!-- Bookmarkpage -->
       <div class="container">
-        <article class="container--bookmarkpage hidden">
+        <article class="container--bookmarkpage hidden" data-js="bookmark-page">
           <!-- Bookmark Quizcard 1 -->
           <article class="bookmark--quizcard">
             <!-- add Bookmark Icon -->
@@ -189,8 +189,36 @@
       </div>
       <!-- Addpagepage -->
       <div class="container">
-        <article class="container--addpagepage hidden" data-js="add-page">
-          <p>Addpagepage</p>
+        <article class="container--addpagepage" data-js="add-page">
+          <article class="addpagepage--welcome">Add your own Questions!</p>
+            <!-- action as target where the form is send to -->
+            <!-- method POST for a anonymized form -->
+            <form action="/register" method="POST">
+              <!-- is the name for the input objekt -->
+              <label>Frage:
+                <!-- type like text or e-mail for specificstion -->
+                <!-- placegholder to show a example -->
+                <!-- required thats impossible to send the form without this input-->
+                <input type="text" placeholder="Hast du schon eine gute Frage?" required class="addpagepage--question"/>
+              </label>
+              <label>
+                Antwort
+                <input type="text" placeholder="Natürlich!" required class="addpagepage--answer">
+              </label>
+              <label>
+                Hashtag 1
+                <input type="text" placeholder="z.B. CSS" required class="addpagepage--hashtagone">
+              </label>
+              <label>
+                Hashtag 2
+                <input type="text" placeholder="Natürlich!" required class="addpagepage--hashtagtwo">
+              </label>
+              <label>
+                Hashtag 3
+                <input type="text" placeholder="z.B. Ordnerstruktur" required class="addpagepage--hashtagthree">
+              </label>
+            </form>
+          </article>
         </article>
       </div>
       <!-- Profilepage -->

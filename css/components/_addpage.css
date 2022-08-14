@@ -1,0 +1,49 @@
+.container {
+    /* set quizcardbox zo a flexbox */
+    display: flex;
+    /* ajust all items to the center of the page */
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.container--addpagepage{
+    display: grid;
+    grid-template-areas:
+    "welcome" "welcome"
+    "headline" "headline"
+    "question" "quesrtion"
+    "Answer" "Answer"
+    "Hashtag1" "Hashtag1"
+    "Hashtag2" "Hashtag2"
+    "Hashtag3" "Hashtag3";
+    background-color: antiquewhite;
+    border: 5px solid orange;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.addpagepage--welcome {
+    grid-area: welcome;
+}
+
+.addpagepage--question {
+    grid-area: headline;
+}
+
+.addpagepage--answer {
+    grid-area: question;
+}
+
+.addpagepage--hashtagone {
+    grid-area: Hashtag1;
+}
+
+.addpagepage--hashtagtwo {
+    grid-area: Hashtag2;
+}
+
+.addpagepage--hashtagthree {
+    grid-area: Hashtag3;
+}
