@@ -7,7 +7,7 @@
     margin: 0;
 }
 
-.quicardpage--quizcard {
+.container--profilepage {
     /* set quizcard to grid */
     display: grid;
     /* set backdgroundcolor */
@@ -22,45 +22,48 @@
     margin: 10px;
     /* card setup */
     grid-template-areas:
-    "question" "question"
-    "asnwer" "answer"
-    "answerbutton" "answerbutton"
-    "hashtag" "hashtag";
+    "headline" "headline"
+    "picture" "name"
+    "aboutme" "aboutme"
+    "qcounter" "bcounter"
+    "settings" "settings"
+    "darkmode" "dbutton";
     /* sajust inner items to the center */
     justify-items: center;
 }
 
-.quizcard--bookmarkicon {
-    /* release the position from the rest of the objects */
-    position: relative;
-    /* cords for the new position */
-    top: -30px;
-    left: 250px;
+.profilepage--headline {
+    grid-area: headline;
 }
 
-.quizcard--question {
-    grid-area: question;
+.profilepage--picture {
+    grid-area: picture;
 }
 
-.quizcard--answer {
-    grid-area: answer;
+.profilepage--name {
+    grid-area: name;
 }
 
-.quizcard--answerbutton {
-    grid-area: answerbutton;
-    width: 15vw;
-    height: 8vh;
-    border-radius: 15px;
+.profilepage--aboutme {
+    grid-area: aboutme;
 }
 
-.quizcard--hashtag {
-    grid-area: hashtag;
+.profilepage--questionscounter {
+    grid-area: qcounter;
 }
 
-li {
-    float: left;
-    margin: 10px;
-    border: 7px solid aqua;
-    border-radius: 15px;
-    background-color: aqua;
-  }
+.profilepage--bookmarkscounter {
+    grid-area: bcounter;
+}
+
+.profilepage--headlinesettings {
+    grid-area: settings;
+}
+
+.profilepage--darkmodetext {
+    grid-area: darkmode;
+}
+
+.profilepage--darkmodebutton {
+    grid-area: dbutton;
+}
