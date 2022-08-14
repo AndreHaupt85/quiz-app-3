@@ -7,6 +7,7 @@
     <title>QuizApp</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="./js/script.js" type="module" defer></script>
+    <link rel="shortcut icon" href="#">
   </head>
   <body>
     <header class="header">
@@ -14,26 +15,187 @@
     </header>
     <main>
       <!-- Quizcardpage -->
-      <div class="container" data-js="quizcard-page">
-        <article class="container--quizcardpage">
-          <p>Quizcardpage</p>
+      <div class="container">
+        <article class="container--quizcardpage" data-js="quizcard-page">
+          <!-- Quizcard 1 -->
+          <article class="quicardpage--quizcard" data-js="quizcard">
+            <!-- add Bookmark Icon -->
+            <img
+              src="./pictures/bookmark_icon.png"
+              alt="bookmark icon"
+              width="40px"
+              height="40px"
+              data-js="bookmarkicon"
+              class="quizcard--bookmarkicon"
+            />
+            <!-- add Question-->
+            <p class="quizcard--question">
+              Mit welchem Befehl erstellt man einen neuen Ordner im Terminal?
+            </p>
+            <!-- add hideable Answer -->
+            <p class="quizcard--answer hidden" data-js="quizcard--answer">mkdir</p>
+            <!-- add Asnwerbutton -->
+            <button class="quizcard--answerbutton" data-js="quizcard--answerbutton">Show Answer</button>
+            <!-- add Hashtags -->
+            <ul class="quizcard--hashtag">
+              <li># Terminal</li>
+              <li># Ordnerstruktur</li>
+              <li># Befehle</li>
+            </ul>
+          </article>
+          <!-- Quizcard 2 -->
+          <article class="quicardpage--quizcard" data-js="quizcard">
+            <!-- add Bookmark Icon -->
+            <img
+              src="./pictures/bookmark_icon.png"
+              alt="bookmark icon"
+              width="40px"
+              height="40px"
+              data-js="bookmarkicon"
+              class="quizcard--bookmarkicon"
+            />
+            <!-- add Question-->
+            <p class="quizcard--question">
+              Mit welchem Befehl deklariert man ein Objekt zu einer Flexbox?
+            </p>
+            <!-- add hideable Answer -->
+            <p class="quizcard--answer hidden">dislpay: flex;</p>
+            <!-- add Asnwerbutton -->
+            <button class="quizcard--answerbutton">Show Answer</button>
+            <!-- add Hashtags -->
+            <ul class="quizcard--hashtag">
+              <li># CSS</li>
+              <li># HTML</li>
+              <li>#Befehle</li>
+            </ul>
+          </article>
+          <!-- Quizcard 3 -->
+          <article class="quicardpage--quizcard" data-js="quizcard">
+            <!-- add Bookmark Icon -->
+            <img
+              src="./pictures/bookmark_icon.png"
+              alt="bookmark icon"
+              width="40px"
+              height="40px"
+              data-js="bookmarkicon"
+              class="quizcard--bookmarkicon"
+            />
+            <!-- add Question-->
+            <p class="quizcard--question">
+              Welche 3 Befehle werden benötigt um ein Repository auf Git zu pushen?
+            </p>
+            <!-- add hideable Answer -->
+            <p class="quizcard--answer hidden">
+                git add .</br>
+                git commit -m "comment"</br>
+                git push
+            </p>
+            <!-- add Asnwerbutton -->
+            <button class="quizcard--answerbutton">Show Answer</button>
+            <!-- add Hashtags -->
+            <ul class="quizcard--hashtag">
+              <li># Terminal</li>
+              <li># Git</li>
+              <li># Befehle</li>
+            </ul>
+          </article>
+          <!-- Quizcard 4 -->
+          <article class="quicardpage--quizcard" data-js="quizcard">
+            <!-- add Bookmark Icon -->
+            <img
+              src="./pictures/bookmark_icon.png"
+              alt="bookmark icon"
+              width="40px"
+              height="40px"
+              data-js="bookmarkicon"
+              class="quizcard--bookmarkicon"
+            />
+            <!-- add Question-->
+            <p class="quizcard--question">
+              Wie sprichst du die Klasse "article class="quizcard" im CSS an?
+            </p>
+            <!-- add hideable Answer -->
+            <p class="quizcard--answer hidden">.quizcard</p>
+            <!-- add Asnwerbutton -->
+            <button class="quizcard--answerbutton">Show Answer</button>
+            <!-- add Hashtags -->
+            <ul class="quizcard--hashtag">
+              <li># CSS</li>
+              <li># HMTL</li>
+              <li># Befehle</li>
+            </ul>
+          </article>
+          <!-- Quizcard 5 -->
+          <article class="quicardpage--quizcard" data-js="quizcard">
+            <!-- add Bookmark Icon -->
+            <img
+              src="./pictures/bookmark_icon.png"
+              alt="bookmark icon"
+              width="40px"
+              height="40px"
+              data-js="bookmarkicon"
+              class="quizcard--bookmarkicon"
+            />
+            <!-- add Question-->
+            <p class="quizcard--question">
+              Welche 3 Dateien sollten in jedem deiner Projekte vorhanden sein?
+            </p>
+            <!-- add hideable Answer -->
+            <p class="quizcard--answer hidden">
+                README.md</br>
+                index.html</br>
+                .gitignore
+            </p>
+            <!-- add Asnwerbutton -->
+            <button class="quizcard--answerbutton">Show Answer</button>
+            <!-- add Hashtags -->
+            <ul class="quizcard--hashtag">
+              <li># Git</li>
+              <li># Ordnerstruktur</li>
+              <li># Projekte</li>
+            </ul>
+          </article>
         </article>
       </div>
       <!-- Bookmarkpage -->
-      <div class="container" data-js="bookmark-page">
-        <article class="container--bookmarkpage">
-          <p>Bookmarkpage</p>
+      <div class="container">
+        <article class="container--bookmarkpage hidden">
+          <!-- Bookmark Quizcard 1 -->
+          <article class="bookmark--quizcard">
+            <!-- add Bookmark Icon -->
+            <img
+              src="./pictures/filled_bookmark_icon.png"
+              alt="bookmark icon"
+              width="40px"
+              height="40px"
+              class="quizcard--bookmarkicon"
+            />
+            <!-- add Question-->
+            <p class="quizcard--question">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, eos!?
+            </p>
+            <!-- add hideable Answer -->
+            <p class="quizcard--answer hidden">Lorem, ipsum dolor.</p>
+            <!-- add Asnwerbutton -->
+            <button class="quizcard--answerbutton">Show Answer</button>
+            <!-- add Hashtags -->
+            <ul class="quizcard--hashtag">
+              <li># Lorem, ipsum.</li>
+              <li># Lorem, ipsum.</li>
+              <li># Lorem, ipsum.</li>
+            </ul>
+          </article>
         </article>
       </div>
       <!-- Addpagepage -->
-      <div class="container" data-js="add-page">
-        <article class="container--addpagepage">
+      <div class="container">
+        <article class="container--addpagepage hidden" data-js="add-page">
           <p>Addpagepage</p>
         </article>
       </div>
       <!-- Profilepage -->
-      <div class="container" data-js="profile-page">
-        <article class="container--profilepage">
+      <div class="container">
+        <article class="container--profilepage hidden" data-js="profile-page">
           <p>Profilepage</p>
         </article>
       </div>
