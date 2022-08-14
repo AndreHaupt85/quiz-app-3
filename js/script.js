@@ -1,6 +1,8 @@
 // import of Functions
-import {toggleAnswer , toggleBookmark } from "./components/_quizcard.js";
+import toggleAnswer from "./components/_quizcard.js";
+import togglenavigation from "./components/_navbar.js";
 
 // call of imported Functions
 toggleAnswer();
-toggleBookmark();
+// toggleBookmark();
+togglenavigation();
