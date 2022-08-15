@@ -22,15 +22,15 @@
     margin: 10px;
     /* card setup */
     grid-template-areas:
-    "question" "question"
-    "asnwer" "answer"
-    "answerbutton" "answerbutton"
-    "hashtag" "hashtag";
+    "question question"
+    "asnwer answer"
+    "answerbutton answerbutton"
+    "hashtag hashtag";
     /* sajust inner items to the center */
     justify-items: center;
 }
 
-.quizcard--bookmarkicon {
+.quizcard--bookmarkicon2 {
     /* release the position from the rest of the objects */
     position: relative;
     /* cords for the new position */

@@ -22,12 +22,12 @@
     margin: 10px;
     /* card setup */
     grid-template-areas:
-    "headline" "headline"
-    "picture" "name"
-    "aboutme" "aboutme"
-    "qcounter" "bcounter"
-    "settings" "settings"
-    "darkmode" "dbutton";
+    "headline headline"
+    "picture name"
+    "aboutme aboutme"
+    "qcounter bcounter"
+    "settings settings"
+    "darkmode dbutton";
     /* sajust inner items to the center */
     justify-items: center;
 }
