@@ -1,18 +1,40 @@
-.header {
+.container--navbar {
     /* fixed the header to the top border */
     position: fixed;
-    top: 0;
+    bottom: 0;
     /* hights fixed width 100% of the monitor */
     width: 100vw;
     height: 70px;
     background-color: red;
     /* rounded border on the bottom corners */
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    font-size: 25px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     /* declared as flexbox and formated all elements in the middle */
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 5;
+}
+
+.container--mainpagebutton {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.container--bookmarkpagebutton {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.container--addpagebutton{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.container--profilepagebutton {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
 }

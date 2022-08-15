@@ -9,9 +9,9 @@
 .header--box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 0,5fr 0,5fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 0,5fr 0,5fr;
     width: 100wv; 
-    height: 200px;
+    height: 150px;
     gap: 5px;
     background-color: black;
 }
@@ -86,25 +86,6 @@
     grid-row: 5 / 6;
 }
 
-.box--bodylefttopborder {
-    background: rgb(158, 158, 238);
-    border-top-left-radius: 50px;
-    grid-column: 1 / 2;
-    grid-row: 6 / 9;
-}
-
-.box--bodytop1 {
-    background: rgb(158, 158, 238);
-    grid-column: 2 / 5;
-    grid-row: 6 / 7;
-}
-
-.box--bodytop2 {
-    background: rgb(158, 158, 238);
-    grid-column: 5 / 6;
-    grid-row: 6 / 7;
-}
-
 @media only screen and (min-width: 766px) {
     .header--box {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -138,13 +119,5 @@
     
     .box--bottom2 {
         grid-column: 6 / 8;
-    }
-    
-    .box--bodytop1 {
-        grid-column: 2 / 6
-    }
-
-    .box--bodytop2 {
-        grid-column: 6 / 8
     }
 }
