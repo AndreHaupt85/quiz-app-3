@@ -5,8 +5,6 @@ export default function toggleBookmark() {
     bookmarks.forEach((bookmark) => {
       /* veränderliche Variable notSaved gesetzt auf true */
       let notSaved = true;
-      /* Test */
-      console.log(bookmark.src);
       /* Clickevent auf das Bookmark */
       bookmark.addEventListener("click", () => {
         notSaved = !notSaved;
@@ -16,4 +14,4 @@ export default function toggleBookmark() {
         : "./pictures/filled_bookmark_icon.png";
       });
     });
-};
+}
