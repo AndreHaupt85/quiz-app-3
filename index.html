@@ -11,7 +11,11 @@
   </head>
   <body>
     <header class="header">
-      <h1>Quizapp</h1>
+      <div class="topbar">
+        <img src="./pictures/quiz_icon.svg" class="topbar--quizicon" width="50px" height="50px" alt="Quiz Icon">
+        <h1 class="topbar--headline">Quizapp</h1>
+        <img src="./pictures/quiz_icon.svg" class="topbar--quizicon" width="50px" height="50px" alt="Quiz Icon">
+      </div>
     </header>
     <main>
       <!-- Quizcardpage -->
@@ -168,17 +172,18 @@
               alt="bookmark icon"
               width="40px"
               height="40px"
+              class="quizcard--bookmarkicon2"
             />
             <!-- add Question-->
-            <p>
+            <p class="quizcard--question">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, eos!?
             </p>
             <!-- add hideable Answer -->
-            <p>Lorem, ipsum dolor.</p>
+            <p class="quizcard--answer hidden">Lorem, ipsum dolor.</p>
             <!-- add Asnwerbutton -->
-            <button>Show Answer</button>
+            <button class="quizcard--answerbutton">Show Answer</button>
             <!-- add Hashtags -->
-            <ul>
+            <ul class="quizcard--hashtag">
               <li># Lorem, ipsum.</li>
               <li># Lorem, ipsum.</li>
               <li># Lorem, ipsum.</li>
