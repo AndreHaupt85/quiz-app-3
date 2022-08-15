@@ -7,7 +7,7 @@
     margin: 0;
 }
 
-.quicardpage--quizcard {
+.quizcardpage--quizcard {
     /* set quizcard to grid */
     display: grid;
     /* set backdgroundcolor */
@@ -22,20 +22,21 @@
     margin: 10px;
     /* card setup */
     grid-template-areas:
-    "question" "question"
-    "asnwer" "answer"
-    "answerbutton" "answerbutton"
-    "hashtag" "hashtag";
+    "question question"
+    "answer answer"
+    "answerbutton answerbutton"
+    "hashtag hashtag";
     /* sajust inner items to the center */
     justify-items: center;
+    position: relative;
+    z-index: -1;
 }
 
 .quizcard--bookmarkicon {
     /* release the position from the rest of the objects */
-    position: relative;
-    /* cords for the new position */
-    top: -30px;
-    left: 250px;
+    position: absolute;
+    top: 0;
+    right: -20px;
 }
 
 .quizcard--question {

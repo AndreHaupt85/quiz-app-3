@@ -10,13 +10,13 @@
 .container--addpagepage{
     display: grid;
     grid-template-areas:
-    "welcome" "welcome"
-    "headline" "headline"
-    "question" "quesrtion"
-    "Answer" "Answer"
-    "Hashtag1" "Hashtag1"
-    "Hashtag2" "Hashtag2"
-    "Hashtag3" "Hashtag3";
+    "welcome welcome"
+    "headline headline"
+    "question quesrtion"
+    "Answer Answer"
+    "Hashtag1 Hashtag1"
+    "Hashtag2 Hashtag2"
+    "Hashtag3 Hashtag3";
     background-color: palegoldenrod;
     border: 5px solid orange;
     border-radius: 50px;
