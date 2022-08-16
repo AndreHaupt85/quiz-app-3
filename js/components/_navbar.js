@@ -9,10 +9,10 @@ export default function navigation() {
     const navAddpage = document.querySelector('[data-js="nav-addpage"]');
     const navProfile = document.querySelector('[data-js="nav-profile"]');
 
-    const quizIndicators = document.querySelector('[data-js="nav-Quizcard"]');
-    const bookmarkIndicators = document.querySelector('[data-js="nav-Quizcard"]');
-    const addPageIndicators = document.querySelector('[data-js="nav-Quizcard"]');
-    const profileIndicators = document.querySelector('[data-js="nav-Quizcard"]');
+    const quizIndicators = document.querySelector('[data-js="quizIndicator"]');
+    const bookmarkIndicators = document.querySelector('[data-js="bookmarkIndicator"]');
+    const addPageIndicators = document.querySelector('[data-js="addIndicator"]');
+    const profileIndicators = document.querySelector('[data-js="profileIndicator"]');
 
     navQuizcard.addEventListener("click", () => {
         homePage.classList.remove("hidden");
@@ -30,6 +30,10 @@ export default function navigation() {
         homePage.classList.add("hidden");
         addPage.classList.add("hidden");
         profilePage.classList.add("hidden");
+        bookmarkIndicators.classList.add("blink_me");
+        quizIndicators.classList.remove("blink_me");
+        addPageIndicators.classList.remove("blink_me");
+        profileIndicators.classList.remove("blink_me");
     });
 
     navAddpage.addEventListener("click", () => {
@@ -37,6 +41,10 @@ export default function navigation() {
         homePage.classList.add("hidden");
         bookmarkPage.classList.add("hidden");
         profilePage.classList.add("hidden");
+        addPageIndicators.classList.add("blink_me");
+        quizIndicators.classList.remove("blink_me");
+        bookmarkIndicators.classList.remove("blink_me");
+        profileIndicators.classList.remove("blink_me");
     });
 
     navProfile.addEventListener("click", () => {
@@ -44,5 +52,9 @@ export default function navigation() {
         homePage.classList.add("hidden");
         bookmarkPage.classList.add("hidden");
         addPage.classList.add("hidden");
+        profileIndicators.classList.add("blink_me");
+        quizIndicators.classList.remove("blink_me");
+        bookmarkIndicators.classList.remove("blink_me");
+        addPageIndicators.classList.remove("blink_me");
     });
 };
