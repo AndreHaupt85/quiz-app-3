@@ -1,40 +1,35 @@
-.container--addpagepage{
+.addpagepage--welcome {
     display: grid;
-    grid-template-areas:
-    "welcome welcome"
-    "headline headline"
-    "question quesrtion"
-    "Answer Answer"
-    "Hashtag1 Hashtag1"
-    "Hashtag2 Hashtag2"
-    "Hashtag3 Hashtag3";
-    background-color: palegoldenrod;
-    border: 5px solid orange;
-    border-radius: 50px;
-    padding: 20px;
-    margin: 20px;
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    background: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .addpagepage--welcome {
-    grid-area: welcome;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background: orange;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
 .addpagepage--question {
-    grid-area: headline;
+    grid-column:  1 / 3;
+    grid-row: 2 / 3;
+    background: red;
 }
 
-.addpagepage--answer {
-    grid-area: question;
+.addpagepage--sidebarleft {
+    grid-column:  1 / 2;
+    grid-row: 1 / 6;
+    background: red;
 }
 
-.addpagepage--hashtagone {
-    grid-area: Hashtag1;
-}
-
-.addpagepage--hashtagtwo {
-    grid-area: Hashtag2;
-}
-
-.addpagepage--hashtagthree {
-    grid-area: Hashtag3;
+.addpagepage--spacetopright {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    background: black;
 }

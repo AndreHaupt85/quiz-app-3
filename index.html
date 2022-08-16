@@ -65,7 +65,7 @@
               <li># Ordnerstruktur</li>
               <li># Befehle</li>
             </ul>
-            <div class="quizcard--left1"></div>
+            <div class="quizcardpage--left1"></div>
           </article>
           <!-- Quizcard 2 -->
           <article class="quizcardpage--quizcard2" data-js="quizcard">
@@ -239,33 +239,46 @@
       <!-- Addpagepage -->
       <div class="container">
         <article class="container--addpagepage hidden" data-js="add-page">
-          <article class="addpagepage--welcome">Add your own Questions!</p>
+          <div></div>
+            <div class="addpagepage--welcome">Add your own Questions!</div>
             <!-- action as target where the form is send to -->
             <!-- method POST for a anonymized form -->
             <form action="/register" method="POST">
               <!-- is the name for the input objekt -->
-              <label>Frage:
-                <!-- type like text or e-mail for specificstion -->
-                <!-- placegholder to show a example -->
-                <!-- required thats impossible to send the form without this input-->
-                <input type="text" placeholder="Hast du schon eine gute Frage?" required class="addpagepage--question"/>
-              </label>
-              <label>
-                Antwort
-                <input type="text" placeholder="Natürlich!" required class="addpagepage--answer">
-              </label>
-              <label>
-                Hashtag 1
-                <input type="text" placeholder="z.B. CSS" required class="addpagepage--hashtagone">
-              </label>
-              <label>
-                Hashtag 2
-                <input type="text" placeholder="Natürlich!" required class="addpagepage--hashtagtwo">
-              </label>
-              <label>
-                Hashtag 3
-                <input type="text" placeholder="z.B. Ordnerstruktur" required class="addpagepage--hashtagthree">
-              </label>
+              <div class="addpagepage--question">
+                <label>Frage:
+                  <!-- type like text or e-mail for specificstion -->
+                  <!-- placegholder to show a example -->
+                  <!-- required thats impossible to send the form without this input-->
+                  <input type="text" placeholder="Hast du schon eine gute Frage?" required/>
+                </label>
+              </div>
+              <div class="addpagepage--answer">
+                <label>
+                  Antwort
+                  <input type="text" placeholder="Natürlich!" required>
+                </label>
+              </div>
+              <div class="addpagepage--hashtagone">
+                <label>
+                  Hashtag 1
+                <input type="text" placeholder="z.B. CSS" required>
+                </label>
+              </div>
+              <div class="addpagepage--hashtagtwo">
+                <label>
+                  Hashtag 2
+                  <input type="text" placeholder="Natürlich!" required>
+                </label>
+              </div>
+              <div class="addpagepage--hashtagthree">
+                <label>
+                  Hashtag 3
+                  <input type="text" placeholder="z.B. Ordnerstruktur" required>
+                </label>
+              </div>
+              <div class="addpagepage--sidebarleft"></div>
+              <div class="addpagepage--spacetopright"></div>
             </form>
           </article>
         </article>
