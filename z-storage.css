@@ -1,40 +1,69 @@
-.container--addpagepage{
+/* .container {
+    /* set quizcardbox zo a flexbox */
+    display: flex;
+    /* ajust all items to the center of the page */
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+} */
+
+.container--profilepage {
+    /* set quizcard to grid */
     display: grid;
-    grid-template-areas:
-    "welcome welcome"
-    "headline headline"
-    "question quesrtion"
-    "Answer Answer"
-    "Hashtag1 Hashtag1"
-    "Hashtag2 Hashtag2"
-    "Hashtag3 Hashtag3";
+    /* set backdgroundcolor */
     background-color: palegoldenrod;
+    /* set border thinkness type and color */
     border: 5px solid orange;
+    /* for rounded corners */
     border-radius: 50px;
+    /* for space between content and border */
     padding: 20px;
-    margin: 20px;
+    /* for space between border and outer objects */
+    margin: 10px;
+    /* card setup */
+    grid-template-areas:
+    "headline headline"
+    "picture name"
+    "aboutme aboutme"
+    "qcounter bcounter"
+    "settings settings"
+    "darkmode dbutton";
+    /* sajust inner items to the center */
+    justify-items: center;
 }
 
-.addpagepage--welcome {
-    grid-area: welcome;
-}
-
-.addpagepage--question {
+.profilepage--headline {
     grid-area: headline;
 }
 
-.addpagepage--answer {
-    grid-area: question;
+.profilepage--picture {
+    grid-area: picture;
 }
 
-.addpagepage--hashtagone {
-    grid-area: Hashtag1;
+.profilepage--name {
+    grid-area: name;
 }
 
-.addpagepage--hashtagtwo {
-    grid-area: Hashtag2;
+.profilepage--aboutme {
+    grid-area: aboutme;
 }
 
-.addpagepage--hashtagthree {
-    grid-area: Hashtag3;
+.profilepage--questionscounter {
+    grid-area: qcounter;
+}
+
+.profilepage--bookmarkscounter {
+    grid-area: bcounter;
+}
+
+.profilepage--headlinesettings {
+    grid-area: settings;
+}
+
+.profilepage--darkmodetext {
+    grid-area: darkmode;
+}
+
+.profilepage--darkmodebutton {
+    grid-area: dbutton;
 }

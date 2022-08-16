@@ -1,69 +1,83 @@
-/* .container {
-    /* set quizcardbox zo a flexbox */
-    display: flex;
-    /* ajust all items to the center of the page */
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-} */
-
 .container--profilepage {
-    /* set quizcard to grid */
     display: grid;
-    /* set backdgroundcolor */
-    background-color: palegoldenrod;
-    /* set border thinkness type and color */
-    border: 5px solid orange;
-    /* for rounded corners */
-    border-radius: 50px;
-    /* for space between content and border */
-    padding: 20px;
-    /* for space between border and outer objects */
-    margin: 10px;
-    /* card setup */
-    grid-template-areas:
-    "headline headline"
-    "picture name"
-    "aboutme aboutme"
-    "qcounter bcounter"
-    "settings settings"
-    "darkmode dbutton";
-    /* sajust inner items to the center */
-    justify-items: center;
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-rows: 10% 1fr 1fr 10% 10% 10%;
+    /* width: ; */
+    gap: 5px;
+    background: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .profilepage--headline {
-    grid-area: headline;
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    background: orange;
+    padding: 5px;
+    border-top-right-radius: 10px;
 }
 
 .profilepage--picture {
-    grid-area: picture;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background: rgb(234, 77, 77);
+    padding: 5px;
 }
 
 .profilepage--name {
-    grid-area: name;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background: rgb(245, 175, 163);
+    padding: 5px;
 }
 
 .profilepage--aboutme {
-    grid-area: aboutme;
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    background: rgb(158, 158, 238);
+    padding: 5px;
 }
 
 .profilepage--questionscounter {
-    grid-area: qcounter;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    background: orange;
+    padding: 5px;
 }
 
 .profilepage--bookmarkscounter {
-    grid-area: bcounter;
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    background-color: rgb(245, 175, 163);
 }
 
 .profilepage--headlinesettings {
-    grid-area: settings;
+    grid-column: 2 / 4;
+    grid-row: 5 / 6;
+    background-color: rgb(234, 77, 77);
+
+    padding: 10px;
 }
 
 .profilepage--darkmodetext {
-    grid-area: darkmode;
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+    background-color: orange;
+    padding: 10px;
 }
 
 .profilepage--darkmodebutton {
-    grid-area: dbutton;
+    grid-column: 3 / 4;
+    grid-row: 6 / 7;
+    background-color: rgb(158, 158, 238);
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+}
+
+.profilepage--sidebarleft {
+    grid-column: 1 / 2;
+    grid-row: 1 / 7;
+    background-color: rgb(245, 175, 163);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
