@@ -1,12 +1,3 @@
-.container {
-    /* set quizcardbox zo a flexbox */
-    display: flex;
-    /* ajust all items to the center of the page */
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-
 .bookmark--quizcard {
     /* set quizcard to grid */
     display: grid;
@@ -30,13 +21,7 @@
     justify-items: center;
 }
 
-.quizcard--bookmarkicon2 {
-    /* release the position from the rest of the objects */
-    position: relative;
-    /* cords for the new position */
-    top: -30px;
-    left: 250px;
-}
+
 
 .quizcard--question {
     grid-area: question;

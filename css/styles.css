@@ -3,7 +3,11 @@
 @import "./components/_header.css";
 @import "./components/main.css";
 @import "./components/_navbar.css";
-@import "./components/_quizcard.css";
+@import "./components/_quizcard1.css";
+@import "./components/_quizcard2.css";
+@import "./components/_quizcard3.css";
+@import "./components/_quizcard4.css";
+@import "./components/_quizcard5.css";
 @import "./components/_bookmark.css#";
 @import "./components/_addpage.css";
 @import "./components/_profile.css";
