@@ -4,11 +4,11 @@ export default function toggleBookmark() {
     /* einteile Variablen intern erstellt */
     bookmarks.forEach((bookmark) => {
       /* veränderliche Variable notSaved gesetzt auf true */
-      let notSaved = true;
+      let notsaved = true;
       /* Clickevent auf das Bookmark */
       bookmark.addEventListener("click", () => {
-        notSaved = !notSaved;
-        bookmark.src = notSaved
+        notsaved = !notsaved;
+        bookmark.src = notsaved
         /* if else Funktion */
         ? "./pictures/bookmark_icon.png"
         : "./pictures/filled_bookmark_icon.png";
