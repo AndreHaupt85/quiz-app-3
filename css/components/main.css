@@ -7,3 +7,11 @@ main {
     padding-left: 0;
     padding-right: 0;
 }
+
+li {
+    float: left;
+}
+
+html {
+    background: black;
+}
