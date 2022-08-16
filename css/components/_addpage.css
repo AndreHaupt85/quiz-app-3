@@ -1,8 +1,8 @@
-.addpagepage--welcome {
+.container--addpagepage {
     display: grid;
     grid-template-columns: 150px 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 5px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px;
     background: black;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -12,24 +12,52 @@
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     background: orange;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top-right-radius: 10px;
+    padding: 5px;
 }
 
 .addpagepage--question {
-    grid-column:  1 / 3;
+    grid-column:  2 / 6;
     grid-row: 2 / 3;
     background: red;
+    border-top-right-radius: 10px;
+    padding: 5px;
 }
 
-.addpagepage--sidebarleft {
-    grid-column:  1 / 2;
-    grid-row: 1 / 6;
+.addpagepage--answer {
+    grid-column:  2 / 6;
+    grid-row: 3 / 4;
+    background: rgb(158, 158, 238);
+    padding: 5px;
+}
+
+.addpagepage--hashtagone {
+    grid-column:  2 / 6;
+    grid-row: 4 / 5;
+    background: orange;
+    padding: 5px;
+}
+
+.addpagepage--hashtagtwo {
+    grid-column:  2 / 6;
+    grid-row: 5 / 6;
+    background: rgb(158, 158, 238);
+    padding: 5px;
+}
+
+.addpagepage--hashtagthree {
+    grid-column:  2 / 6;
+    grid-row: 6 / 7;
     background: red;
+    border-bottom-right-radius: 10px;
+    padding: 5px;
 }
 
-.addpagepage--spacetopright {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-    background: black;
+.addpagepage--sidebarleft1 {
+    grid-column:  1 / 2;
+    grid-row: 1 / 7;
+    background: rgb(245, 175, 163);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    height: 300px;
 }
