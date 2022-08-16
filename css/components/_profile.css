@@ -1,11 +1,11 @@
-.container {
+/* .container {
     /* set quizcardbox zo a flexbox */
     display: flex;
     /* ajust all items to the center of the page */
     justify-content: center;
     padding: 0;
     margin: 0;
-}
+} */
 
 .container--profilepage {
     /* set quizcard to grid */
