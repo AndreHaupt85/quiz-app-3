@@ -15,10 +15,13 @@
 }
 
 .navbar-bottomleftcorner {
+    display: flex;
+    justify-content: right;
     grid-column: 1 / 2;
     grid-row: 1 / 5;
     background: rgb(158, 158, 238);
     border-top-left-radius: 50px;
+    padding: 5px;
 }
 
 .navbar--bottom1 {
