@@ -23,6 +23,10 @@ export default function navigation() {
         bookmarkIndicators.classList.remove("blink_me");
         addPageIndicators.classList.remove("blink_me");
         profileIndicators.classList.remove("blink_me");
+        navQuizcard.classList.add("colored");
+        navBookmarks.classList.remove("colored");
+        navAddpage.classList.remove("colored");
+        navProfile.classList.remove("colored");
     });
 
     navBookmarks.addEventListener("click", () => {
@@ -34,6 +38,10 @@ export default function navigation() {
         quizIndicators.classList.remove("blink_me");
         addPageIndicators.classList.remove("blink_me");
         profileIndicators.classList.remove("blink_me");
+        navBookmarks.classList.add("colored");
+        navQuizcard.classList.remove("colored");
+        navAddpage.classList.remove("colored");
+        navProfile.classList.remove("colored");
     });
 
     navAddpage.addEventListener("click", () => {
@@ -45,6 +53,10 @@ export default function navigation() {
         quizIndicators.classList.remove("blink_me");
         bookmarkIndicators.classList.remove("blink_me");
         profileIndicators.classList.remove("blink_me");
+        navAddpage.classList.add("colored");
+        navQuizcard.classList.remove("colored");
+        navBookmarks.classList.remove("colored");
+        navProfile.classList.remove("colored");
     });
 
     navProfile.addEventListener("click", () => {
@@ -56,5 +68,9 @@ export default function navigation() {
         quizIndicators.classList.remove("blink_me");
         bookmarkIndicators.classList.remove("blink_me");
         addPageIndicators.classList.remove("blink_me");
+        navProfile.classList.add("colored");
+        navQuizcard.classList.remove("colored");
+        navBookmarks.classList.remove("colored");
+        navAddpage.classList.remove("colored");
     });
 };
