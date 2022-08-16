@@ -16,16 +16,23 @@
         <!-- headline  right fixed-->
         <h1 class="box--headline">QuizApp</h1>
         <!-- 4 nav pointer -->
-        <div class="box--button1 blink_me" data-js="quizIndicator">Quizcards</div>
-        <div class="box--button2" data-js="bookmarkIndicator">Bookmarks</div>
-        <div class="box--button3" data-js="addIndicator">Addpage</div>
-        <div class="box--button4" data-js="profileIndicator">Profile</div>
-        <!-- left border frame -->
+        <div class="box--buttonbox1">
+          <div class="box--button1 blink_me" data-js="quizIndicator">Quizcards</div>
+          <div class="box--button2" data-js="bookmarkIndicator">Bookmarks</div>
+        </div>
+        <div class="box--buttonbox2">
+          <div class="box--button3" data-js="addIndicator">Addpage</div>
+          <div class="box--button4" data-js="profileIndicator">Profile</div>
+        </div>
+          <!-- left border frame -->
         <div class="box--lefttopborder">02-34565</div>
         <div class="box--leftbottomborder">04-67842</div>
         <!-- bottom border from header -->
         <div class="box--bottom1"></div>
         <div class="box--bottom2"></div>
+        <div class="box--bottom3"></div>
+        <div class="box--bottom4"></div>
+        <div class="box--bottom5"></div>
         <!-- top boarder from main -->
         <div class="box--bodylefttopborder"></div>
         <div class="box--bodytop1"></div>
@@ -37,168 +44,39 @@
       <div class="container">
         <article class="container--quizcardpage" data-js="quizcard-page">
           <!-- Quizcard 1 -->
-          <article class="quizcardpage--quizcard1" data-js="quizcard">
+          <section class="quizcardpage--quizcard" data-js="quizcard">
             <!-- add Bookmark Icon -->
-            <div class="quizcardpage--bookmarkbox1">
-              <img
-                src="./pictures/bookmark_icon.png"
-                alt="bookmark icon"
-                width="40"
-                height="40"
-                data-js="bookmarkicon"
-                class="quizcard--bookmarkicon1"
-              />
+            <div class="quizcardpage--bookmarkbox">
+              <button class="quizcard--bookmarkiconbutton">
+                <img
+                  src="./pictures/bookmark_icon.png"
+                  alt="bookmark icon"
+                  width="40"
+                  height="40"
+                  data-js="bookmarkicon"
+                  class="quizcard--bookmarkicon"
+                />
+              </button>
             </div>
             <!-- add Question-->
-            <p class="quizcard--question1">
+            <p class="quizcard--question">
               Mit welchem Befehl erstellt man einen neuen Ordner im Terminal?
             </p>
             <!-- add hideable Answer -->
-            <div class="quizcard--answerbox1">
+            <div class="quizcard--answerbox">
               <p class="quizcard--answer1 hidden" data-js="quizcard--answer">mkdir</p>
             </div>
             <!-- add Asnwerbutton -->
-            <button class="quizcard--answerbutton1" data-js="quizcard--answerbutton">Show Answer</button>
+            <button class="quizcard--answerbutton" data-js="quizcard--answerbutton">Show Answer</button>
             <!-- add Hashtags -->
-            <ul class="quizcard--hashtag1">
+            <ul class="quizcard--hashtag">
               <li># Terminal</li>
               <li># Ordnerstruktur</li>
               <li># Befehle</li>
             </ul>
-            <div class="quizcardpage--left1"></div>
-          </article>
-          <!-- Quizcard 2 -->
-          <article class="quizcardpage--quizcard2" data-js="quizcard">
-            <!-- add Bookmark Icon -->
-            <div class="quizcardpage--bookmarkbox2">
-              <img
-                src="./pictures/bookmark_icon.png"
-                alt="bookmark icon"
-                width="40px"
-                height="40px"
-                data-js="bookmarkicon"
-                class="quizcard--bookmarkicon2"
-              />
-            </div>
-            <!-- add Question-->
-            <p class="quizcard--question2">
-              Mit welchem Befehl deklariert man ein Objekt zu einer Flexbox?
-            </p>
-            <!-- add hideable Answer -->
-            <div class="quizcard--answerbox2">
-              <p class="quizcard--answer2 hidden" data-js="quizcard--answer">dislpay: flex;</p>
-            </div>
-            <!-- add Asnwerbutton -->
-            <button class="quizcard--answerbutton2" data-js="quizcard--answerbutton">Show Answer</button>
-            <!-- add Hashtags -->
-            <ul class="quizcard--hashtag2">
-              <li># CSS</li>
-              <li># HTML</li>
-              <li>#Befehle</li>
-            </ul>
-            <div class="quizcard--right2"></div>
-          </article>
-          <!-- Quizcard 3 -->
-          <article class="quizcardpage--quizcard3" data-js="quizcard">
-            <!-- add Bookmark Icon -->
-            <div class="quizcardpage--bookmarkbox3">
-              <img
-                src="./pictures/bookmark_icon.png"
-                alt="bookmark icon"
-                width="40px"
-                height="40px"
-                data-js="bookmarkicon"
-                class="quizcard--bookmarkicon3"
-              />
-            </div>
-            <!-- add Question-->
-            <p class="quizcard--question3">
-              Welche 3 Befehle werden benötigt um ein Repository auf Git zu pushen?
-            </p>
-            <!-- add hideable Answer -->
-            <div class="quizcard--answerbox3">
-              <p class="quizcard--answer3 hidden" data-js="quizcard--answer">
-                  git add .</br>
-                  git commit -m "comment"</br>
-                  git push
-              </p>
-            </div>
-            <!-- add Asnwerbutton -->
-            <button class="quizcard--answerbutton3" data-js="quizcard--answerbutton">Show Answer</button>
-            <!-- add Hashtags -->
-            <ul class="quizcard--hashtag3">
-              <li># Terminal</li>
-              <li># Git</li>
-              <li># Befehle</li>
-            </ul>
-            <div class="quizcard--left3"></div>
-          </article>
-          <!-- Quizcard 4 -->
-          <article class="quizcardpage--quizcard4" data-js="quizcard">
-            <!-- add Bookmark Icon -->
-            <div class="quizcardpage--bookmarkbox4">
-              <img
-                src="./pictures/bookmark_icon.png"
-                alt="bookmark icon"
-                width="40px"
-                height="40px"
-                data-js="bookmarkicon"
-                class="quizcard--bookmarkicon4"
-              />
-            </div>
-              <!-- add Question-->
-            <p class="quizcard--question4">
-              Wie sprichst du die Klasse "article class="quizcard" im CSS an?
-            </p>
-            <!-- add hideable Answer -->
-            <div class="quizcard--answerbox4">
-              <p class="quizcard--answer4 hidden" data-js="quizcard--answer">.quizcard</p>
-            </div>
-              <!-- add Asnwerbutton -->
-            <button class="quizcard--answerbutton4" data-js="quizcard--answerbutton">Show Answer</button>
-            <!-- add Hashtags -->
-            <ul class="quizcard--hashtag4">
-              <li># CSS</li>
-              <li># HMTL</li>
-              <li># Befehle</li>
-            </ul>
-            <div class="quizcard--right4"></div>
-          </article>
-          <!-- Quizcard 5 -->
-          <article class="quizcardpage--quizcard5" data-js="quizcard">
-            <!-- add Bookmark Icon -->
-            <div class="quizcardpage--bookmarkbox5">
-              <img
-                src="./pictures/bookmark_icon.png"
-                alt="bookmark icon"
-                width="40px"
-                height="40px"
-                data-js="bookmarkicon"
-                class="quizcard--bookmarkicon5"
-              />
-            </div>
-              <!-- add Question-->
-            <p class="quizcard--question5">
-              Welche 3 Dateien sollten in jedem deiner Projekte vorhanden sein?
-            </p>
-            <!-- add hideable Answer -->
-            <div class="quizcard--answerbox5">
-              <p class="quizcard--answer5 hidden" data-js="quizcard--answer">
-                  README.md</br>
-                  index.html</br>
-                  .gitignore
-              </p>
-            </div>
-              <!-- add Asnwerbutton -->
-            <button class="quizcard--answerbutton5" data-js="quizcard--answerbutton">Show Answer</button>
-            <!-- add Hashtags -->
-            <ul class="quizcard--hashtag5">
-              <li># Git</li>
-              <li># Ordnerstruktur</li>
-              <li># Projekte</li>
-            </ul>
-            <div class="quizcard--left5"></div>
-          </article>
+            <div class="quizcardpage--left"></div>
+            <div class="quizcard--decoration"></div>
+          </section>
         </article>
       </div>
       <!-- Bookmarkpage -->
@@ -246,41 +124,26 @@
               <form action="/register" method="POST">
             </div>
               <!-- is the name for the input objekt -->
-            <div class="addpagepage--question">
-              <label>Frage:
-                  <!-- type like text or e-mail for specificstion -->
-                  <!-- placegholder to show a example -->
-                  <!-- required thats impossible to send the form without this input-->
-                <input type="text" placeholder="Hast du schon eine gute Frage?" required/>
-              </label>
-              </div>
-              <div class="addpagepage--answer">
-                <label>
-                  Antwort
-                  <input type="text" placeholder="Natürlich!" required>
-                </label>
-              </div>
-              <div class="addpagepage--hashtagone">
-                <label>
-                  Hashtag 1
-                <input type="text" placeholder="z.B. CSS" required>
-                </label>
-              </div>
-              <div class="addpagepage--hashtagtwo">
-                <label>
-                  Hashtag 2
-                  <input type="text" placeholder=". B. Ordnerstruktur" required>
-                </label>
-              </div>
-              <div class="addpagepage--hashtagthree">
-                <label>
-                  Hashtag 3
-                  <input type="text" placeholder="z.B. Git" required>
-                </label>
-              </div>
+          ^   <label for="question" class="addpagepage--question--tag">Frage:</label>
+              <!-- type like text or e-mail for specificstion -->
+              <!-- placegholder to show a example -->
+              <!-- required thats impossible to send the form without this input-->
+              <input class="addpagepage--question--input" type="text" id="question" placeholder="Hast du schon eine gute Frage?" required/>
+              <!-- answer -->
+              <label for="answer" class="addpagepage--answer--tag">Antwort</label>
+              <input type="text" class="addpagepage--answer--input" id="answer" placeholder="Natürlich!" required>
+              <!-- hashtag1 -->
+              <label for="hashtag1" class="addpagepage--hashtag1--label">Hashtag 1</label>
+              <input type="text" class="addpagepage--hashtag1--input" id="hashtag1" placeholder="z.B. CSS" required>
+              <!-- hashtag2 -->
+              <label for="hashtag2" class="addpagepage--hashtag2--label">Hashtag 2</label>
+              <input type="text" class="addpagepage--hashtag2--input" id="hashtag2" placeholder=". B. Ordnerstruktur" required>
+              <!-- hashtag3 -->
+              <label for="hashtag3" class="addpagepage--hashtag3--label">Hashtag 3</label>
+              <input type="text" class="addpagepage--hashtag3--input" id="hashtag3" placeholder="z.B. Git" required>
+              <!-- filler -->
+              <button class="submitbutton">Absenden</button>
               <div class="addpagepage--sidebarleft1"></div>
-              <div class="addpagepage--spacetopright1"></div>
-              <div class="addpagepage--spacetopright2"></div>
             </form>
           </article>
         </article>
@@ -309,6 +172,8 @@
           <div class="navbar-bottomleftcorner">06-54275</div>
           <div class="navbar--bottom1"></div>
           <div class="navbar--bottom2"></div>
+          <div class="navbar--bottom3"></div>
+          <div class="navbar--bottom4"></div>
           <button class="navbar--mainpagebutton colored" data-js="nav-Quizcard">
             Mainpage
           </button>

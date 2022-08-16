@@ -1,0 +1,79 @@
+.quizcardpage--quizcard {
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    /* width: ; */
+    gap: 5px;
+    background: black;
+}
+
+.quizcard--question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 335px;
+    grid-column: 5 / 10;
+    grid-row: 1 / 2;
+    background: orange;
+    padding: 5px;
+    border-top-left-radius: 10px;
+}
+
+.quizcard--bookmarkiconbutton {
+    border: none;
+    background: none;
+}
+
+.quizcardpage--bookmarkbox {
+    display: flex;
+    min-width: 50px;
+    grid-column: 9 / 10;
+    grid-row: 2 / 3;
+    background: rgb(245, 175, 163);
+    padding: 5px;
+}
+
+.quizcard--answerbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 280px;
+    grid-column: 5 / 9;
+    grid-row: 2 / 3;
+    background: rgb(234, 77, 77);
+    padding: 5px;
+}
+
+.quizcard--answerbutton {
+    min-width: 335px;
+    grid-column: 5 / 10;
+    grid-row: 3 / 4;
+    background: rgb(158, 158, 238);
+    padding: 5px;
+}
+
+.quizcard--hashtag {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 335px;
+    grid-column: 5 / 10;
+    grid-row: 4 / 5;
+    background: orange;
+    padding: 5px;
+    border-bottom-left-radius: 10px
+}
+
+.quizcardpage--left {
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+    background-color: rgb(245, 175, 163);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.quizcard--decoration {
+    grid-column: 2 / 5;
+    grid-row: 1 / 5;
+    background:green;
+}
