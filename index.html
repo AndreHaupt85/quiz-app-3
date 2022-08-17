@@ -75,7 +75,6 @@
               <li># Befehle</li>
             </ul>
             <div class="quizcardpage--left"></div>
-            <div class="quizcard--decoration"></div>
           </section>
         </article>
       </div>
@@ -117,35 +116,79 @@
       <!-- Addpagepage -->
       <div class="container">
         <article class="container--addpagepage hidden" data-js="add-page">
-          <div></div>
-            <div class="addpagepage--welcome">Add your own Questions!
-              <!-- action as target where the form is send to -->
-              <!-- method POST for a anonymized form -->
-              <form action="/register" method="POST">
-            </div>
-              <!-- is the name for the input objekt -->
-          ^   <label for="question" class="addpagepage--question--tag">Frage:</label>
-              <!-- type like text or e-mail for specificstion -->
-              <!-- placegholder to show a example -->
-              <!-- required thats impossible to send the form without this input-->
-              <input class="addpagepage--question--input" type="text" id="question" placeholder="Hast du schon eine gute Frage?" required/>
-              <!-- answer -->
-              <label for="answer" class="addpagepage--answer--tag">Antwort</label>
-              <input type="text" class="addpagepage--answer--input" id="answer" placeholder="Natürlich!" required>
-              <!-- hashtag1 -->
-              <label for="hashtag1" class="addpagepage--hashtag1--label">Hashtag 1</label>
-              <input type="text" class="addpagepage--hashtag1--input" id="hashtag1" placeholder="z.B. CSS" required>
-              <!-- hashtag2 -->
-              <label for="hashtag2" class="addpagepage--hashtag2--label">Hashtag 2</label>
-              <input type="text" class="addpagepage--hashtag2--input" id="hashtag2" placeholder=". B. Ordnerstruktur" required>
-              <!-- hashtag3 -->
-              <label for="hashtag3" class="addpagepage--hashtag3--label">Hashtag 3</label>
-              <input type="text" class="addpagepage--hashtag3--input" id="hashtag3" placeholder="z.B. Git" required>
-              <!-- filler -->
-              <button class="submitbutton">Absenden</button>
+          <div class="addpagebox--welcome">Add your own Questions!</div>
+          <section class="addpagepage--addpagebox">
+            <form data-js="form">
+              <!-- question -->
+          ^   <label
+                for="question"
+                class="addpagebox--question--tag">
+                Frage:
+                </label>
+              <input
+                class="addpagepage--question--input"
+                type="text" 
+                id="question"
+                placeholder="Hast du schon eine gute Frage?"
+                required
+                >
+                <!-- answer -->
+              <label 
+                for="answer"
+                class="addpagebox--answer--tag">
+                Antwort
+                </label>
+              <input
+                class="addpagebox--answer--input"
+                type="text"
+                id="answer"
+                placeholder="Natürlich!"
+                required
+                >
+                <!-- hashtag1 -->
+              <label
+                for="hashtag1"
+                class="addpagebox--hashtag1--label">
+                Hashtag 1
+                </label>
+              <input
+                class="addpagebox--hashtag1--input"
+                type="text"
+                id="hashtag1"
+                placeholder="z.B. CSS"
+                required
+                >
+                <!-- hashtag2 -->
+              <label
+                for="hashtag2"
+                class="addpagebox--hashtag2--label">
+                Hashtag 2
+                </label>
+              <input
+                class="addpagebox--hashtag2--input"
+                type="text"
+                id="hashtag2"
+                placeholder=". B. Ordnerstruktur"
+                required
+                >
+                <!-- hashtag3 -->
+              <label 
+                for="hashtag3"
+                class="addpagebox--hashtag3--label">
+                Hashtag 3
+                </label>
+              <input
+                class="addpagebox--hashtag3--input"
+                type="text"
+                id="hashtag3"
+                placeholder="z.B. Git"
+                required
+                >
+                <!-- filler -->
+              <button class="addpagebox--submitbutton" type="submit">Absenden</button> 
               <div class="addpagepage--sidebarleft1"></div>
             </form>
-          </article>
+          </section>
         </article>
       </div>
       <!-- Profilepage -->

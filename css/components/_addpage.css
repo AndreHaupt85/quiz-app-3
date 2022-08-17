@@ -1,4 +1,4 @@
-.container--addpagepage {
+.addpagepage--addpagebox {
     display: grid;
     height: 70vh;
     grid-template-columns: 150px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -9,7 +9,7 @@
     padding-bottom: 10px;
 }
 
-.addpagepage--welcome {
+.addpagebox--welcome {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,18 +19,18 @@
     border-top-right-radius: 30px;
 }
 
-.addpagepage--question--tag {
+.addpagebox--question--tag {
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-column: 2 / 4;
-    grid-row: 2 / 3;
+    /* grid-column: 2 / 4;
+    grid-row: 2 / 5; */
     background: orange;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
 
-.addpagepage--question--input {
+.addpagebox--question--input {
     grid-column: 4 / 10;
     grid-row: 2 / 3;
     background: orange;
@@ -38,7 +38,7 @@
     border-bottom-right-radius: 30px;
 }
 
-.addpagepage--answer--tag {
+.addpagebox--answer--tag {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,7 +49,7 @@
     border-bottom-left-radius: 30px;
 }
 
-.addpagepage--answer--input {
+.addpagebox--answer--input {
     grid-column: 4 / 10;
     grid-row: 3 / 4;
     background: rgb(245, 175, 163);
@@ -57,7 +57,7 @@
     border-bottom-right-radius: 30px;
 }
 
-.addpagepage--hashtag1--label {
+.addpagebox--hashtag1--label {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,7 +68,7 @@
     border-bottom-left-radius: 30px;
 }
 
-.addpagepage--hashtag1--input {
+.addpagebox--hashtag1--input {
     grid-column: 4 / 10;
     grid-row: 4 / 5;
     background: rgb(234, 77, 77);
@@ -76,7 +76,7 @@
     border-bottom-right-radius: 30px;
 }
 
-.addpagepage--hashtag2--label {
+.addpagebox--hashtag2--label {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +87,7 @@
     border-bottom-left-radius: 30px;
 }
 
-.addpagepage--hashtag2--input {
+.addpagebox--hashtag2--input {
     grid-column: 4 / 10;
     grid-row: 5 / 6;
     background: rgb(245, 175, 163);
@@ -95,7 +95,7 @@
     border-bottom-right-radius: 30px;
 }
 
-.addpagepage--hashtag3--label {
+.addpagebox--hashtag3--label {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,7 +106,7 @@
     border-bottom-left-radius: 30px;
 }
 
-.addpagepage--hashtag3--input {
+.addpagebox--hashtag3--input {
     grid-column: 4 / 10;
     grid-row: 6 / 7;
     background: orange;
@@ -114,7 +114,7 @@
     border-bottom-right-radius: 30px;
 }
 
-.submitbutton {
+.addpagebox--submitbutton {
     grid-column: 2 / 10;
     grid-row: 7 / 8;
     background: rgb(158, 158, 238);
@@ -122,7 +122,7 @@
     border-bottom-right-radius: 30px;
 }
 
-.addpagepage--sidebarleft1 {
+.addpagebox--sidebarleft1 {
     grid-column: 1 / 2;
     grid-row: 1 / 8;
     background: rgb(245, 175, 163);
