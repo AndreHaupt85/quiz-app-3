@@ -1,4 +1,4 @@
-function(createcard) {
+export default function(createCard) {
 
     const form = document.querySelector('[data-js="form"]');
 
@@ -20,10 +20,10 @@ function(createcard) {
             hashtag3: fields.hashtag3.value,
         };
         
-        const quizCard = [];
+        const quizCards = [];
         quizCard.push(formData);
 
-        console.log(quizCard);
+        console.log(quizCards);
 
         // reset the form
         event.target.reset();
@@ -31,16 +31,3 @@ function(createcard) {
         fields.question.focus();
     });
 }
-
-
-
-
-// const question = [
-//     {
-//         id: 1
-//         isBookmarked: false,
-//         question: "How often can I use <aside>?",
-//         answer: "As often as u like.",
-//         tags: ["html", "elements", "basic"],
-//     },
-// ];

@@ -4,3 +4,24 @@
     background-color: rgb(245, 175, 163);
     background-color: rgb(234, 77, 77);
 }
+
+
+const container = document.querySelector("container--quizcardpage");
+
+const quizcard = document.createElement(section);
+const bookmarkbox = document.createElement(div);
+const bootmarkiconbutton = document.createElement(button);
+const bookmarkicon = document.createElement(img);
+const question = document.createElement(p);
+const answerbox = document.createElement(div);
+const answer = document.createElement(p);
+const answerbutton = document.createElement(button);
+const hashtag = document.createElement(ul);
+const hashtagone = document.createElement(li);
+const hashtagtwo = document.createElement(li);
+const hashtagthree = document.createElement(li);
+const left = document.createElement(div);
+
+quizcard.textcontent = quizCards(0,1);
+
+
