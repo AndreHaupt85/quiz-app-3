@@ -1,4 +1,4 @@
-export default function(createCard) {
+// export default function(createCard) {
 
     const form = document.querySelector('[data-js="form"]');
 
@@ -30,4 +30,4 @@ export default function(createCard) {
         // jumps after reset in the first formpart
         fields.question.focus();
     });
-}
+// }

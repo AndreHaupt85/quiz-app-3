@@ -1,5 +1,5 @@
 export default function navigation() {
-    const homePage = document.querySelector('[data-js="quizcard-page"]');
+    const homePage = document.querySelector('[data-js="quiz11"]');
     const bookmarkPage = document.querySelector('[data-js="bookmark-page"]');
     const addPage = document.querySelector('[data-js="add-page"]');
     const profilePage = document.querySelector('[data-js="profile-page"]');
